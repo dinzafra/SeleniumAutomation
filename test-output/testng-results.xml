@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Starting test suite: Demo Test Suite]]>
+    </line>
+    <line>
+      <![CDATA[Included groups: [Ljava.lang.String;@19b843ba]]>
+    </line>
+    <line>
+      <![CDATA[Excluded groups: [Ljava.lang.String;@64ec96c6]]>
+    </line>
+    <line>
+      <![CDATA[Test methods: [Lorg.testng.ITestNGMethod;@77659b30]]>
+    </line>
+    <line>
+      <![CDATA[Test parameters: {}]]>
+    </line>
+    <line>
+      <![CDATA[Test Result: SUCCESS]]>
+    </line>
+    <line>
+      <![CDATA[Test Result: SUCCESS]]>
+    </line>
+    <line>
+      <![CDATA[Test Result: SUCCESS]]>
+    </line>
+    <line>
+      <![CDATA[Starting test suite: Sample Test Suite]]>
+    </line>
+    <line>
+      <![CDATA[Included groups: [Ljava.lang.String;@1e6dad8]]>
+    </line>
+    <line>
+      <![CDATA[Excluded groups: [Ljava.lang.String;@7b3315a5]]>
+    </line>
+    <line>
+      <![CDATA[Test methods: [Lorg.testng.ITestNGMethod;@8ed9cf]]>
+    </line>
+    <line>
+      <![CDATA[Test parameters: {}]]>
+    </line>
+    <line>
+      <![CDATA[Test Result: FAILURE]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-03-16T06:09:28 PST" name="All Test Suites" finished-at="2024-03-16T06:09:28 PST" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- All Test Suites -->
+  <suite started-at="2024-03-16T06:09:05 PST" name="Demo Test Suite" finished-at="2024-03-16T06:09:22 PST" duration-ms="16425">
+    <groups>
+    </groups>
+    <test started-at="2024-03-16T06:09:05 PST" name="Test" finished-at="2024-03-16T06:09:22 PST" duration-ms="16425">
+      <class name="testCases.DemoTest">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:testCases.DemoTest@69504ae9]" started-at="2024-03-16T06:09:05 PST" name="setupTest" finished-at="2024-03-16T06:09:14 PST" duration-ms="8435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="enterCredentials()[pri:1, instance:testCases.DemoTest@69504ae9]" started-at="2024-03-16T06:09:14 PST" name="enterCredentials" description="Login" finished-at="2024-03-16T06:09:20 PST" duration-ms="6193" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Result: SUCCESS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- enterCredentials -->
+        <test-method signature="clickLogin()[pri:2, instance:testCases.DemoTest@69504ae9]" started-at="2024-03-16T06:09:20 PST" name="clickLogin" description="Click Login BUtton" finished-at="2024-03-16T06:09:21 PST" duration-ms="951" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Result: SUCCESS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- clickLogin -->
+        <test-method signature="clearCredentials()[pri:3, instance:testCases.DemoTest@69504ae9]" started-at="2024-03-16T06:09:21 PST" name="clearCredentials" finished-at="2024-03-16T06:09:22 PST" duration-ms="627" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Result: SUCCESS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- clearCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.DemoTest@69504ae9]" started-at="2024-03-16T06:09:22 PST" name="teardown" finished-at="2024-03-16T06:09:22 PST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.DemoTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Demo Test Suite -->
+  <suite started-at="2024-03-16T06:09:22 PST" name="Sample Test Suite" finished-at="2024-03-16T06:09:28 PST" duration-ms="6411">
+    <groups>
+    </groups>
+    <test started-at="2024-03-16T06:09:22 PST" name="Test" finished-at="2024-03-16T06:09:28 PST" duration-ms="6411">
+      <class name="testCases.SampleTestCase">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:testCases.SampleTestCase@78452606]" started-at="2024-03-16T06:09:22 PST" name="setupTest" finished-at="2024-03-16T06:09:28 PST" duration-ms="5847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="clearPasswordCreds()[pri:1, instance:testCases.SampleTestCase@78452606]" started-at="2024-03-16T06:09:28 PST" name="clearPasswordCreds" finished-at="2024-03-16T06:09:28 PST" duration-ms="213" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#passwords"}
+  (Session info: chrome=122.0.6261.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.1.2', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4618f96d276e955df950d7a40141508c, findElement {using=id, value=passwords}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: /var/folders/gw/z47h9cmn1h5...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52587}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52587/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4618f96d276e955df950d7a40141508c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#passwords"}
+  (Session info: chrome=122.0.6261.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.1.2', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4618f96d276e955df950d7a40141508c, findElement {using=id, value=passwords}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: /var/folders/gw/z47h9cmn1h5...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52587}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52587/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4618f96d276e955df950d7a40141508c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at testCases.DemoTest.clearText(DemoTest.java:42)
+at testCases.DemoTest.clearPassword(DemoTest.java:52)
+at testCases.SampleTestCase.clearPasswordCreds(SampleTestCase.java:12)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test Result: FAILURE]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- clearPasswordCreds -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.SampleTestCase@78452606]" started-at="2024-03-16T06:09:28 PST" name="teardown" finished-at="2024-03-16T06:09:28 PST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.SampleTestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- Sample Test Suite -->
+</testng-results>
